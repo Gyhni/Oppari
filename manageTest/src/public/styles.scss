@@ -1,0 +1,227 @@
+$colors: (
+  primary:    #FF4747,
+  secondary:  #252525,
+  danger:     #f53d3d,
+  light:      #4AD3F7,
+  dark:       #236575,
+  text:       #EFEFEF,
+  inputBG:    #FAFAFA,
+);
+$break-small: 420px;
+body{
+  background: map-get($colors,secondary);
+  color : map-get($colors,text);
+  font-family: 'Roboto', sans-serif;
+  .column{
+    margin:auto;
+    width:100%;
+
+  }
+  a{
+    color: map-get($colors,text);
+    font-size: 30px;
+  }
+
+  input{
+    display: block;
+    height: 50px;
+    width:82%;
+    margin:15px;
+    font-size:60px;
+    padding:10px 0px;
+    padding-left:36px;
+    border-radius: 36px;
+  }
+  .userID {
+    float: left;
+    width: 85%;
+  }
+  button{
+    width: 30%;
+    background: #FF4747;
+    color: #EFEFEF;
+    border: none;
+    font-size: 99px;
+    line-height: normal;
+    text-align: center;
+    margin: 1.5%;
+    border-radius: 50px;
+    @media screen and (max-width: $break-small) {
+      font-size: 65px;
+    }
+  }
+  select {
+    font-size: 24px;
+    padding: 20px 15px;
+    border-radius: 30px;
+  }
+  span {
+    font-size: 30px;
+  }
+}
+
+.textButton{
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.selectParty{
+  float:right;
+}
+
+.numbers{
+  width:100%;
+  margin: 0 !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (max-width: $break-small) {
+    width:80%;
+    margin-left: 10% !important;
+  }
+}
+header{
+  display: block;
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.container{
+  height: 100%;
+}
+.saveButton {
+  display: block;
+  width: 100%;
+  margin: 0;
+  margin-top: 50px;
+  font-size: 62px;
+  padding: 10px 0;
+  border-radius: 10px;
+  @media screen and (max-width: $break-small) {
+    margin-top:20px;
+  }
+}
+.selectParty {
+  font-size: 24px;
+  padding: 20px 15px;
+  border-radius: 30px;
+  @media screen and (max-width: $break-small) {
+    float: none;
+    width: 100%;
+    padding: 10px;
+  }
+}
+.userIDWrapper {
+  position: relative;
+  width: 65%;
+  float: left;
+  @media screen and (max-width: $break-small) {
+    width: 100%;
+    float: none;
+  }
+  input {
+    @media screen and (max-width: $break-small) {
+      margin: 15px 0;
+      font-size: 32px;
+      padding-left: 5%;
+      width:95%;
+      float: none;
+      height: auto !important;
+    }
+  }
+}
+.eventWrapper {
+  width: 30%;
+  float: right;
+  margin: 15px;
+  @media screen and (max-width: $break-small) {
+    width: 100% !important;
+    float: none !important;
+    margin: 0 !important;
+  }
+}
+.eventTag {
+  font-size: 30px;
+  line-height: 52px;
+}
+.arrow {
+  float: right;
+  margin: 0;
+  margin-top: 17px;
+  right: 20px !important;
+  border-radius: 50%;
+  width: 70px !important;
+  height: 70px !important;
+  padding: 0;
+  position: absolute;
+  @media screen and (max-width: $break-small) {
+    top: 6px;
+    right: 4px !important;
+    height: 50px !important;
+    width: 50px !important;
+    margin-top: 0px !important;
+  }
+}
+.content{
+  .login{
+    position: absolute;
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -175px;
+    button {
+      width:auto;
+      border-radius: 30px;
+      font-size:45px;
+    }
+  }
+}
+nav{
+  display: inline-block;
+  width: 100%;
+  font-size: 0;
+  line-height: 0;
+  margin: 0 auto;
+  padding: 0;
+  background: map-get($colors,primary);
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      display: inline;
+      float: left;
+      margin: 0 5px;
+      a{
+        display: block;
+        font-size: 16px;
+        line-height: normal;
+        text-align: center;
+        padding: 15px 20px;
+        color: map-get($colors,text);
+        text-decoration: none;
+      }
+      a:hover{
+        background: map-get($colors,light);
+      }
+    }
+  }
+}
+footer{
+  background: map-get($colors,primary);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+.hidden{
+  display: none;
+}

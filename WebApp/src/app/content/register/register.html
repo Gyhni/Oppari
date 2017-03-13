@@ -1,0 +1,6 @@
+<h1>Rekisteröidy</h1>
+<input placeholder="Sähköposti" [(ngModel)]="username">
+<input placeholder="Salasana" type="password" [(ngModel)]="password">
+<input placeholder="Salasana uudestaan" type="password" [(ngModel)]="rePassword">
+<button (click)="submitUser()">Tallenna</button>
+<button (click)="goBack()">Takaisin</button>

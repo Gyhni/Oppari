@@ -1,0 +1,6 @@
+<h1>Tapahtumat</h1>
+<input type="text" placeholder="Tapahtuman Nimi" [(ngModel)]="eventName">
+<input type="text" placeholder="Alkamis aika" [(ngModel)]="eventTimeStart">
+<input type="text" placeholder="Loppumis aika" [(ngModel)]="eventTimeEnd">
+<span>Paikka: {{eventPlace[0].barName}}</span>
+<button (click)="eventSubmit()">Tallenna</button>

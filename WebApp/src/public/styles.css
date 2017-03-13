@@ -1,0 +1,198 @@
+html {
+  height: 100%; }
+
+body {
+  background: #252525;
+  color: #EFEFEF;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  margin: 0; }
+  body input {
+    display: block;
+    height: 50px;
+    padding: 15px 50px;
+    width: 80%;
+    border-radius: 40px;
+    margin: auto;
+    margin-bottom: 4%;
+    font-size: 32px; }
+  body button {
+    width: 150px;
+    background: #FF4747;
+    color: #EFEFEF;
+    border: none;
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+    margin: 10px;
+    padding: 15px 20px;
+    font-size: 28px; }
+  body register {
+    background-image: url("./img/app_login_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center; }
+    body register h1 {
+      margin: 0;
+      padding: 5% 0;
+      font-size: 62px;
+      display: block;
+      text-align: center;
+      width: 100%;
+      padding-top: 35%; }
+    body register button {
+      display: inline;
+      border-radius: 20px; }
+    body register input {
+      width: 60%; }
+  body groups {
+    height: 100%;
+    width: 100%;
+    text-align: center; }
+    body groups h1 {
+      margin: 0;
+      padding: 5% 0;
+      font-size: 62px;
+      display: block;
+      text-align: center;
+      width: 100%; }
+    body groups button {
+      display: inline;
+      border-radius: 20px;
+      background: transparent;
+      width: 100%; }
+    body groups ul {
+      list-style-type: none; }
+  body login {
+    background-image: url("./img/app_login_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: block; }
+  body groups {
+    background-image: url("./img/app_login_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: block; }
+  body home {
+    background: #FF4747;
+    height: 100%;
+    width: 100%;
+    display: block; }
+    body home .card {
+      background-image: url(./img/pallo.png);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
+      height: 100%;
+      width: 60%;
+      margin: auto;
+      position: relative; }
+      body home .card h1 {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+        font-size: 102px;
+        margin: 0;
+        position: relative; }
+    body home div h1 {
+      position: absolute;
+      top: 15%;
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 62px; }
+    body home div h2 {
+      position: absolute;
+      top: 75%;
+      display: block;
+      width: 70%;
+      padding: 0 15%;
+      text-align: center;
+      font-size: 42px; }
+
+facebook-login button {
+  background: transparent;
+  width: 80%; }
+
+.register {
+  background: transparent;
+  width: 80%; }
+
+.numbers {
+  float: left;
+  max-width: 600px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+header {
+  display: block;
+  width: 100%;
+  height: 0px;
+  position: relative; }
+
+.container, .content {
+  height: 100%; }
+
+.content .login {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 28px; }
+.content img {
+  width: 75%;
+  margin-top: 45%;
+  margin-bottom: 10%; }
+
+nav {
+  display: inline-block;
+  width: 100%;
+  font-size: 0;
+  line-height: 0;
+  margin: 0 auto;
+  padding: 0;
+  background: #FF4747; }
+  nav ul {
+    margin: 0;
+    padding: 0; }
+    nav ul li {
+      display: inline;
+      float: left;
+      margin: 0 5px; }
+      nav ul li a {
+        display: block;
+        font-size: 16px;
+        line-height: normal;
+        text-align: center;
+        padding: 15px 20px;
+        color: #EFEFEF;
+        text-decoration: none; }
+
+footer {
+  background: #FF4747;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100% !important; } }
+
+/*# sourceMappingURL=styles.css.map */

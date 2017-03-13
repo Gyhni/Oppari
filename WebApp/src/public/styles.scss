@@ -1,0 +1,238 @@
+$colors: (
+  primary:    #FF4747,
+  secondary:  #252525,
+  text:       #EFEFEF,
+  inputBG:    #FAFAFA,
+);
+$break-small: 768px;
+html {
+  height: 100%;
+}
+body {
+  background: map-get($colors,secondary);
+  color : map-get($colors,text);
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  margin: 0;
+  input{
+    display: block;
+    height: 50px;
+    padding: 15px 50px;
+    width:80%;
+    border-radius: 40px;
+    margin: auto;
+    margin-bottom: 4%;
+    font-size: 32px;
+  }
+  button{
+    width: 150px;
+    background: map-get($colors,primary);
+    color : map-get($colors,text);
+    border: none;
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+    margin: 10px;
+    padding: 15px 20px;
+    font-size: 28px;
+  }
+  register {
+    background-image: url('./img/app_login_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    h1 {
+      margin: 0;
+      padding: 5% 0;
+      font-size: 62px;
+      display: block;
+      text-align: center;
+      width: 100%;
+      padding-top: 35%;
+    }
+    button {
+      display: inline;
+      border-radius: 20px;
+    }
+    input {
+      width:60%;
+    }
+  }
+  groups {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    h1 {
+      margin: 0;
+      padding: 5% 0;
+      font-size: 62px;
+      display: block;
+      text-align: center;
+      width:100%;
+    }
+    button {
+      display: inline;
+      border-radius: 20px;
+      background:transparent;
+      width:100%;
+    }
+    ul {
+      list-style-type: none;
+    }
+
+  }
+  login {
+    background-image: url('./img/app_login_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+  groups {
+    background-image: url('./img/app_login_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+  home {
+       background: map-get($colors,primary);
+       height: 100%;
+       width: 100%;
+       display: block;
+    .card {
+      background-image: url(./img/pallo.png);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
+      height: 100%;
+      width: 60%;
+      margin: auto;
+      position: relative;
+      h1 {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+        font-size: 102px;
+        margin:0;
+        position: relative;
+      }
+    }
+    div h1 {
+      position: absolute;
+      top: 15%;
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 62px;
+    }
+    div h2 {
+      position: absolute;
+      top: 75%;
+      display: block;
+      width: 70%;
+      padding: 0 15%;
+      text-align: center;
+      font-size: 42px;
+    }
+  }
+
+}
+facebook-login{
+  button {
+    background: transparent;
+    width:80%;
+  }
+}
+.register {
+  background: transparent;
+  width:80%;
+}
+.numbers{
+  float: left;
+  max-width: 600px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+header{
+  display: block;
+  width: 100%;
+  height: 0px;
+  position: relative;
+}
+.container, .content{
+  height: 100%;
+}
+.content{
+  .login{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 28px;
+  }
+  img {
+    width: 75%;
+    margin-top: 45%;
+    margin-bottom: 10%;
+  }
+}
+nav{
+  display: inline-block;
+  width: 100%;
+  font-size: 0;
+  line-height: 0;
+  margin: 0 auto;
+  padding: 0;
+  background: map-get($colors,primary);
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      display: inline;
+      float: left;
+      margin: 0 5px;
+      a{
+        display: block;
+        font-size: 16px;
+        line-height: normal;
+        text-align: center;
+        padding: 15px 20px;
+        color: map-get($colors,text);
+        text-decoration: none;
+
+      }
+      a:hover{
+        background: map-get($colors,light);
+      }
+    }
+  }
+}
+footer{
+  background: map-get($colors,primary);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+
+.container {
+  @media screen and (max-width: $break-small) {
+    width: 100% !important;
+  }
+}

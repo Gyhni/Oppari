@@ -1,0 +1,7 @@
+<div class="login">
+    <img src="./img/app_login_logo.png" alt="logo"/>
+    <input type="text" id="userName" placeholder="Tunnus" [(ngModel)]="userName">
+    <input type="password" id="userPass" placeholder="Salasana" [(ngModel)]="userPass">
+    <button class="login" (click)="signIn()">Kirjaudu</button>
+  <button class="register" routerLink="/register" skipLocationChange>Rekisteröidy</button>
+</div>

@@ -1,0 +1,9 @@
+<h1>Ryhmät</h1>
+<span>Valitse oma ryhmäsi</span>
+<ul>
+  <li *ngFor="let i of groups">
+    <button (click)="selectGroup(i.groupId, i.groupName)">{{i.groupDescription}}, {{i.groupName}}</button>
+    <hr>
+  </li>
+</ul>
+<p *ngIf="groups == null">Päivitä sivu</p>

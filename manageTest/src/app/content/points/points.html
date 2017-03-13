@@ -1,0 +1,19 @@
+<span>Tapahtuma:
+  <select class="selectEvent" [ngModel]="selectedEvent" (ngModelChange)="onChangeE($event)" name="selE">
+      <option value="" disabled selected style="display: none;">Valitse tapahtuma</option>
+    <option [value]="j.eventId" *ngFor="let j of events">{{j.eventName}}</option>
+  </select>
+</span>
+<span>Ryhmä:
+  <select class="selectGroup" [ngModel]="selectedGroup" (ngModelChange)="onChangeG($event)" name="selG">
+      <option value="" disabled selected style="display: none;">Valitse ryhmä</option>
+    <option [value]="i.groupId" *ngFor="let i of groups">{{i.groupName}}</option>
+  </select>
+</span>
+
+<h1>Tunnus:</h1>
+<input placeholder="(Ei pakollinen)" [(ngModel)]="clientPin">
+<h1>Määrä:</h1>
+<input placeholder="Piste määrä" [(ngModel)]="points">
+<button class="textButton saveButton" (click)="submitPoints()">Lähetä</button>
+

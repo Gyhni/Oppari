@@ -1,0 +1,40 @@
+page-login {
+  .img{
+    background-image: url('../assets/img/logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    margin: auto;
+    box-shadow: none;
+    height: 242px;
+    width: 241px;
+    margin-bottom: 20px;
+  }
+  .inputCard{
+    background-color: map-get($colors,inputBG);
+    box-shadow: none;
+    border-radius: 20px;
+    .inputText{
+      padding-left: 20px !important;
+    }
+  }
+  .login-button{
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: none;
+    font-size: 25px;
+  }
+  .FBLogin{
+    margin-top: 40px;
+    text-align: center;
+    box-shadow: none;
+    font-size: 20px;
+  }
+  .register-button{
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: none;
+    font-size: 20px;
+  }
+}
+

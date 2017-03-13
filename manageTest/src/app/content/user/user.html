@@ -1,0 +1,16 @@
+<h1>Käyttäjät</h1>
+<input placeholder="Käyttäjä" [(ngModel)]="username">
+<input placeholder="Salasana" type="password" [(ngModel)]="password">
+<select [(ngModel)]="level">
+  <option value="" disabled selected style="display: none;">Valitse taso</option>
+  <option value="1" [ngClass]="getCSSClassesManage()">admin</option>
+  <option value="2">manager</option>
+  <option value="3">pisteiden antaja</option>
+</select>
+<input placeholder="Sähköposti" [(ngModel)]="email">
+<input placeholder="Oletus pisteet" [(ngModel)]="points">
+<select [ngModel]="access" (ngModelChange)="onChange($event)" name="sel">
+  <option value="" disabled selected style="display: none;">Valitse Baari</option>
+  <option [value]="i.barId" *ngFor="let i of bars">{{i.barName}}</option>
+</select>
+<button class="saveButton" (click)="submitUser()">Tallenna</button>

@@ -1,0 +1,9 @@
+<h1>Tapahtumat</h1>
+<input type="text" placeholder="Tapahtuman Nimi" [(ngModel)]="eventName">
+<input type="date" placeholder="Alkamis aika" [(ngModel)]="eventTimeStart">
+<input type="date" placeholder="Loppumis aika" [(ngModel)]="eventTimeEnd">
+<select [ngModel]="access" (ngModelChange)="onChange($event)" name="sel">
+  <option value="" disabled selected style="display: none;">Valitse Baari</option>
+  <option [value]="i.barId" *ngFor="let i of bars">{{i.barName}}</option>
+</select>
+<button class="saveButton" (click)="eventSubmit()">Tallenna</button>

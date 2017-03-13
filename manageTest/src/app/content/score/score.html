@@ -1,0 +1,7 @@
+<h1>Tulokset</h1>
+<select [ngModel]="selectedEvent" (ngModelChange)="onChange($event)" name="sel">
+  <option value="" disabled selected style="display: none;">Valitse tapahtuma</option>
+  <option [value]="i.eventId" *ngFor="let i of events">{{i.eventName}}</option>
+</select>
+<a href={{link}}>{{link}}</a>
+<button class="saveButton" (click)="createLink()">Luo linkki</button>

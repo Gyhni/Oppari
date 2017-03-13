@@ -1,0 +1,9 @@
+<ion-content>
+  <ion-card>
+    <ion-list>
+      <ion-item color="text" *ngFor="let group of groups " (click)="selectGroup(group.groupId)">
+        {{group.groupName + ", " + group.groupDescription}}
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>

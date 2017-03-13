@@ -1,0 +1,22 @@
+page-mainPage {
+  .master{
+    background-color : map_get($colors,primary);
+  }
+ .card{
+   height: 242px;
+   width: 241px;
+   box-shadow: none;
+   display: block;
+   margin:auto;
+   margin-top: 121px;
+   top: 50%;
+   background-color : map_get($colors,primary);
+   background-image: url('../assets/img/pallo.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   h4{
+     line-height: 242px;
+     font-size: 72px;
+   }
+ }
+}

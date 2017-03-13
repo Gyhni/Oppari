@@ -1,0 +1,27 @@
+<ul >
+    <li>
+      <a routerLink="/home" skipLocationChange [ngClass]="getCSSClasses()">Pisteet</a>
+    </li>
+    <li>
+      <a routerLink="/events" skipLocationChange [ngClass]="getCSSClasses()">Tapahtumat</a>
+    </li>
+    <li>
+      <a routerLink="/groups" skipLocationChange [ngClass]="getCSSClasses()">Ryhmät</a>
+    </li>
+    <li>
+      <a routerLink="/user" skipLocationChange [ngClass]="getCSSClasses()">Käyttäjät</a>
+    </li>
+    <li>
+      <a routerLink="/bar" [ngClass]="getCSSClassesBar()" skipLocationChange>Baarit</a>
+    </li>
+    <li>
+      <a routerLink="/score" skipLocationChange [ngClass]="getCSSClasses()">Tulokset</a>
+    </li>
+    <li>
+      <a routerLink="/points" skipLocationChange [ngClass]="getCSSClasses()">Lisäpisteet</a>
+    </li>
+    <li>
+      <a routerLink="" skipLocationChange (click)="signOut()" [ngClass]="getCSSClassesIn()">Kirjaudu Ulos</a>
+    </li>
+</ul>
+

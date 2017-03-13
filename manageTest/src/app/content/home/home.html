@@ -1,0 +1,26 @@
+<div class="column">
+  <div class="eventWrapper">
+    <select class="selectParty" [ngModel]="selectedEvent" (ngModelChange)="onChange($event)" name="sel">
+      <option value="" disabled selected style="display: none;">Valitse tapahtuma</option>
+      <option [value]="i.eventId" *ngFor="let i of events">{{i.eventName}}</option>
+    </select>
+  </div>
+  <div class="userIDWrapper">
+    <input class="userID" placeholder="Tunnus" [(ngModel)]="customer.id">
+    <button class="textButton arrow" (click)="clearNum()">X</button>
+  </div>
+<span class="numbers">
+<button (click)="addNum(1)" class="number">1</button>
+<button (click)="addNum(2)" class="number">2</button>
+<button (click)="addNum(3)" class="number">3</button>
+<button (click)="addNum(4)" class="number">4</button>
+<button (click)="addNum(5)" class="number">5</button>
+<button (click)="addNum(6)" class="number">6</button>
+<button (click)="addNum(7)" class="number">7</button>
+<button (click)="addNum(8)" class="number">8</button>
+<button (click)="addNum(9)" class="number">9</button>
+<button (click)="addNum(0)" class="number">0</button>
+</span>
+
+<button class="textButton saveButton" (click)="submitPoints()">Tallenna</button>
+</div>

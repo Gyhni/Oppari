@@ -1,0 +1,13 @@
+<ion-content class="master" padding>
+  <ion-card class="img">
+  </ion-card>
+    <ion-card class="inputCard">
+      <ion-input class="inputText" type="text" placeholder="Tunnus" [(ngModel)]="user"></ion-input>
+    </ion-card>
+    <ion-card class="inputCard">
+      <ion-input class="inputText" type="password" placeholder="Salasana"[(ngModel)]="pass"></ion-input>
+    </ion-card>
+  <ion-card class="login-button" ><ion-icon color="primary" name="checkmark-circle" (click)="login()"></ion-icon></ion-card>
+  <ion-card class="FBLogin" (click)="loginFB()"> <ion-icon class="fblogo" color="text" name="logo-facebook"> </ion-icon><span color="text" padding-left> Login with facebook</span></ion-card>
+  <ion-card class="register-button" (click)="register()"><span color="text">Rekisteröidy</span></ion-card>
+</ion-content>
