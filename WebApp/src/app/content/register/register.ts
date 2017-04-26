@@ -18,8 +18,12 @@ export class Register{
     if(this.password == this.rePassword){
       this._userService.createUser(this.username, this.password)
         .subscribe(data => {
-          console.log(data);
-          this.router.navigate([''],{skipLocationChange: true});
+          if(data.code==1){
+            this.router.navigate([''],{skipLocationChange: true});
+          }
+          else{
+            alert("Käyttäjän luonti ei onnistunut: " + data.message);
+          }
         })
     }
     else{

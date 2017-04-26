@@ -15,7 +15,6 @@ export class Login implements OnInit{
   constructor(private _userService:UserService, private router: Router){}
 
   ngOnInit(){
-    console.log(sessionStorage.getItem('currentUserGroups'));
     if(sessionStorage.getItem('currentUserGroups')){
       this.router.navigate(['home'],{skipLocationChange: true});
     }
@@ -24,7 +23,6 @@ export class Login implements OnInit{
   signIn(){
     this._userService.getUser(this.userName,this.userPass)
       .subscribe(data => {
-        console.log(data);
         if(data.code == 1){
           sessionStorage.setItem('currentUserId',data.userId);
           sessionStorage.setItem('currentUserPin',data.userPin);
